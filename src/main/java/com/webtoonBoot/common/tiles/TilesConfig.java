@@ -12,15 +12,15 @@ public class TilesConfig{
 	public TilesConfigurer tilesConfigurer() {
 		final TilesConfigurer configurer = new TilesConfigurer();
 //		configurer.setDefinitions(new String[] {"WEB-INF/tiles/tiles_member.xml"});
-		configurer.setDefinitions(new String[] {"/WEB-INF/tiles/tiles_admin_goods.xml",
-						"/WEB-INF/tiles/tiles_admin_member.xml",
-						"/WEB-INF/tiles/tiles_admin_order.xml",
-						"/WEB-INF/tiles/tiles_cart.xml",
-						"/WEB-INF/tiles/tiles_goods.xml",
-						"/WEB-INF/tiles/tiles_main.xml",
-						"/WEB-INF/tiles/tiles_member.xml",
-						"/WEB-INF/tiles/tiles_mypage.xml",
-						"/WEB-INF/tiles/tiles_order.xml",
+		configurer.setDefinitions(new String[] {"classpath:/WEB-INF/tiles/tiles_admin_goods.xml",
+						"classpath:/WEB-INF/tiles/tiles_admin_member.xml",
+						"classpath:/WEB-INF/tiles/tiles_admin_order.xml",
+						"classpath:/WEB-INF/tiles/tiles_cart.xml",
+						"classpath:/WEB-INF/tiles/tiles_goods.xml",
+						"classpath:/WEB-INF/tiles/tiles_main.xml",
+						"classpath:/WEB-INF/tiles/tiles_member.xml",
+						"classpath:/WEB-INF/tiles/tiles_mypage.xml",
+						"classpath:/WEB-INF/tiles/tiles_order.xml",
 				});
 		configurer.setCheckRefresh(true);
 		return configurer;
