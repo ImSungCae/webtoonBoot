@@ -8,12 +8,8 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @EnableCaching
 @SpringBootApplication
-public class WebtoonBootApplication extends SpringBootServletInitializer {
-
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
-		return builder.sources(WebtoonBootApplication.class);
-	}
+public class WebtoonBootApplication  {
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(WebtoonBootApplication.class, args);
