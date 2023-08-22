@@ -23,7 +23,7 @@ public class FileDownloadController {
 		                 	@RequestParam("goods_id") String goods_id,
 			                 HttpServletResponse response) throws Exception {
 		OutputStream out = response.getOutputStream();
-		String filePath=CURR_IMAGE_REPO_PATH+"\\"+goods_id+"\\"+fileName;
+		String filePath=CURR_IMAGE_REPO_PATH+"/"+goods_id+"/"+fileName;
 		File image=new File(filePath);
 
 		fileName = URLEncoder.encode(fileName,"utf-8");
@@ -46,7 +46,7 @@ public class FileDownloadController {
                             	@RequestParam("goods_id") String goods_id,
 			                 HttpServletResponse response) throws Exception {
 		OutputStream out = response.getOutputStream();
-		String filePath=CURR_IMAGE_REPO_PATH+"\\"+goods_id+"\\"+fileName;
+		String filePath=CURR_IMAGE_REPO_PATH+"/"+goods_id+"/"+fileName;
 		File image=new File(filePath);
 		
 		if (image.exists()) { 
